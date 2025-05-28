@@ -48,7 +48,7 @@ export const updateNote = async (req, res) => {
       { new: true }
     );
     if (!updateNote) return res.status(404).json({ message: "Note not found" });
-    else res.status(200).json(updateNote);
+    else res.status(200).json(updatedNote);
   } catch (error) {
     console.error("Error in deleteNote controller:", error);
     res.status(500).json({ message: "Internal server error" });
