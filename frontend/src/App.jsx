@@ -1,9 +1,9 @@
-import { Button } from "@heroui/react";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <Button>Hello there</Button>
+      <Home />
     </div>
   );
 };
